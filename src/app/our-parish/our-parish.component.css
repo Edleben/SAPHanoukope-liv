@@ -1,0 +1,228 @@
+/* Import shared modern component styles */
+@import url('../shared/modern-components.css');
+
+/* Hide old background styles */
+.bg-image {
+  display: none;
+}
+
+.banner {
+  display: none;
+}
+
+.ourParish {
+  display: none;
+}
+
+/* Modern styles will be applied through the HTML updates */
+.mainWrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+section.sermon-section {
+    position: absolute;
+    width: 100%;
+}
+
+.overlay {
+    background-color: #0d0c0c63;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.schedule {
+    height: 653px;
+}
+
+.text-block {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.mass {
+    background-color: hsl(8, 97%, 23%);
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.confession,
+.adoration {
+    background-color: #eae6e1;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.mass h2,
+.confession h2,
+.adoration h2 {
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.main-wrapper {
+    padding: -50px;
+}
+
+.mission-statement-section {
+    background-color: #0b2d29;
+    /* You'll change this to match your actual background color */
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.mission-statement-section .mission-text {
+    width: 45%;
+}
+
+.mission-statement-section h2 {
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.mission-statement-section p {
+    margin-bottom: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 1.6;
+}
+
+.mission-statement-section .btn {
+    background-color: gold;
+    /* Customize your button color */
+    color: black;
+    /* Customize your button text color */
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Custom styles for the sermon section */
+.sermon-section {
+    display: block;
+    height: 550px;
+    padding: 100px 0;
+    background-color: #ebe6e0;
+
+    justify-content: center;
+    /* Adjust padding to suit your design */
+}
+
+.sermon-section .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better readability */
+    background: ('/assets/images/hanoukope/h img1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.sermon-section h2 {
+    color: #483a9a;
+    /* White color for the text */
+    margin-bottom: 30px;
+}
+
+.sermon-section .btn-custom {
+    background-color: #d2b48c;
+    /* Custom color for the buttons */
+    border: none;
+    margin-right: 10px;
+}
+
+.sermon-section .btn-custom:hover {
+    background-color: #b09c7f;
+    /* Darker shade on hover */
+}
+
+/* Custom styles */
+.main-header {
+    background-color: #b35900;
+    /* This is the header background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #004225;
+    /* Color of the CTA button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003814;
+    /* Darken the button when hovered */
+}
+
+.support-content {
+    display: flex;
+    align-items: center;
+    /* This centers the content vertically */
+    justify-content: center;
+    /* This centers the content horizontally */
+    gap: 20px;
+    /* This adds space between the image and the text */
+    padding: 40px;
+}
+
+.support-image {
+    max-width: 50%;
+    height: auto;
+}
+
+.support-text {
+    max-width: 50%;
+    color: #4119d2 !important;
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    .support-content {
+        flex-direction: column;
+        display: none;
+        /* Stack content vertically on small screens */
+    }
+
+    .support-image,
+    .support-text {
+        max-width: 100%;
+    }
+
+    /* prayer-request-section */
+    .prayer-request-section {
+        background-image: ('./assets/images/hanoukope/h img1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 50px;
+        color: rgb(211, 146, 146);
+    }
+
+    .form-background {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 5px;
+    }
+
+    .btn-custom {
+        background-color: gold;
+        border: none;
+    }
+}

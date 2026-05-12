@@ -1,0 +1,256 @@
+/* Shared Modern Component Styles */
+
+/* Section Header */
+.section-header-modern {
+  background: linear-gradient(135deg, #2c3e50, #1a2a3a);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header-modern h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.section-header-modern p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e9ecef;
+}
+
+/* Content Section */
+.content-section-modern {
+  padding: 3rem 0;
+}
+
+/* Modern Card Layout */
+.card-layout-modern {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card-layout-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-header-modern {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  padding: 1.5rem;
+}
+
+.card-title-modern {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-body-modern {
+  padding: 1.5rem;
+}
+
+/* Grid Layout */
+.grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-item-modern {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.grid-item-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item-modern h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* List Styles */
+.list-modern {
+  list-style: none;
+  padding: 0;
+}
+
+.list-modern li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+}
+
+.list-modern li:last-child {
+  border-bottom: none;
+}
+
+.list-modern li::before {
+  content: "•";
+  color: #e6b800;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+/* Button Group */
+.btn-group-modern {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+/* Image Styles */
+.img-modern {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.img-modern:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styles */
+.icon-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #e6b800, #c99e00);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Text Styles */
+.text-highlight-modern {
+  background: linear-gradient(135deg, #e6b800, #c99e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Divider */
+.divider-modern {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e6b800, transparent);
+  margin: 2rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-header-modern h1 {
+    font-size: 2rem;
+  }
+  
+  .section-header-modern p {
+    font-size: 1rem;
+  }
+  
+  .grid-modern {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .btn-group-modern {
+    flex-direction: column;
+  }
+  
+  .btn-group-modern .btn-modern {
+    width: 100%;
+  }
+}
+.img-cover {
+  height: 220px;
+}
+
+.img-cover-lg {
+  height: 300px;
+}
+
+.img-cover-sm {
+  height: 160px;
+}
+
+.social-links-modern {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.social-link-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e9ecef;
+  color: #495057;
+  transition: all 0.3s ease;
+}
+
+.social-link-modern:hover {
+  background: #e6b800;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.portfolio-info {
+  background: rgba(255, 255, 255, 0.9);
+}
+.avatar-modern {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px auto;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 6px solid rgba(0,0,0,0.03);
+}
+
+.avatar-modern-sm {
+  width: 120px;
+  height: 120px;
+}
+
+.avatar-modern-lg {
+  width: 180px;
+  height: 180px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

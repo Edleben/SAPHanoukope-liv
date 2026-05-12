@@ -1,0 +1,118 @@
+<main class="mainWrapper">
+  <!-- Section Header -->
+  <section class="section-header-modern">
+    <div class="container">
+      <h1>Notre Paroisse</h1>
+      <p>Découvrez notre communauté de foi, d'amour et de service</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section-modern">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card-layout-modern">
+            <div class="card-header-modern">
+              <h2 class="card-title-modern">Actualités Paroissiales</h2>
+            </div>
+            <div class="card-body-modern">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-modern img-cover-lg" src="assets/images/hanoukope/Choral-Tech.jpg"
+                      alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-modern img-cover-lg" src="assets/images/hanoukope/news/paroisse.jpg"
+                      alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-modern img-cover-lg" src="assets/images/hanoukope/news/pelerinage10.jpeg"
+                      alt="Third slide">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-layout-modern">
+            <div class="card-header-modern">
+              <h2 class="card-title-modern">Bienvenue</h2>
+            </div>
+            <div class="card-body-modern">
+              <p>Bienvenue dans notre communauté paroissiale. Nous sommes ravis de vous accueillir et de partager notre foi avec vous.</p>
+              <div class="divider-modern"></div>
+              <p>Notre paroisse est un lieu de prière, de communion et de service où chacun peut grandir spirituellement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Cards -->
+      <div class="row mt-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card-layout-modern">
+            <div class="card-body-modern text-center">
+              <div class="icon-modern">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3 class="card-title-modern">Accueil</h3>
+              <p>Découvrez notre communauté et nos activités</p>
+              <a [routerLink]="['/home']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-layout-modern">
+            <div class="card-body-modern text-center">
+              <div class="icon-modern">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <h3 class="card-title-modern">A Propos</h3>
+              <p>En savoir plus sur notre histoire et nos valeurs</p>
+              <a [routerLink]="['/about-us']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-layout-modern">
+            <div class="card-body-modern text-center">
+              <div class="icon-modern">
+                <i class="fas fa-church"></i>
+              </div>
+              <h3 class="card-title-modern">Clergé & Conseil</h3>
+              <p>Rencontrez nos prêtres et notre conseil paroissial</p>
+              <a [routerLink]="['/clergy-and-parish-council']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-layout-modern">
+            <div class="card-body-modern text-center">
+              <div class="icon-modern">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3 class="card-title-modern">Associations</h3>
+              <p>Découvrez nos groupes et ministères paroissiaux</p>
+              <a [routerLink]="['/ministries-and-associations']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>

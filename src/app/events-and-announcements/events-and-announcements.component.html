@@ -1,0 +1,52 @@
+<main class="mainWrapper">
+  <!-- Section Header -->
+  <section class="section-header-modern">
+    <div class="container">
+      <h1>Annonces et Événements</h1>
+      <p>Restez informé de nos activités paroissiales et événements spéciaux</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section-modern">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <img src="assets/images/hanoukope/rubrique-img/Regola_ofs.jpg" class="img-modern img-cover-lg" alt="sacre-pic">
+        </div>
+      </div>
+
+      <div class="grid-modern">
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">📅</div>
+          <h3>Activités</h3>
+          <p>Découvrez nos événements paroissiaux et activités communautaires</p>
+          <a [routerLink]="['/events-and-announcements/parish-events']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">📣</div>
+          <h3>Annonces</h3>
+          <p>Restez informé des dernières nouvelles de notre paroisse</p>
+          <a [routerLink]="['/events-and-announcements/news-and-announcements']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">📖</div>
+          <h3>Bulletin Paroissial</h3>
+          <p>Consultez notre bulletin mensuel avec les dernières informations</p>
+          <a [routerLink]="['/events-and-announcements/bulletin']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">❓</div>
+          <h3>Foire Aux Questions</h3>
+          <p>Trouvez des réponses aux questions fréquemment posées</p>
+          <a [routerLink]="['/events-and-announcements/faq']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>

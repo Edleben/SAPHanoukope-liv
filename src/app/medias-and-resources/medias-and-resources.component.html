@@ -1,0 +1,52 @@
+<main id="mainWrapper">
+  <!-- Section Header -->
+  <section class="section-header-modern">
+    <div class="container">
+      <h1>Média et Ressources</h1>
+      <p>Découvrez nos contenus multimédias et ressources spirituelles</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section-modern">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <img src="assets/images/hanoukope/rubrique-img/croximg.jpg" class="img-modern img-cover-lg" alt="Media">
+        </div>
+      </div>
+
+      <div class="grid-modern">
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🖼️</div>
+          <h3>Gallerie Photos</h3>
+          <p>Revivez les moments marquants de notre vie paroissiale</p>
+          <a [routerLink]="['/medias-and-resources/photo-gallery']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🎥</div>
+          <h3>Les Lives</h3>
+          <p>Retransmissions en direct de nos célébrations</p>
+          <a [routerLink]="['/medias-and-resources/livestream']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">📖</div>
+          <h3>Ressources et Documents</h3>
+          <p>Accédez à nos documents et ressources spirituelles</p>
+          <a [routerLink]="['/medias-and-resources/resource-library']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">✉️</div>
+          <h3>Contactez-Nous!</h3>
+          <p>Pour toute question ou demande d'information</p>
+          <a [routerLink]="['/medias-and-resources/contact-information']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>

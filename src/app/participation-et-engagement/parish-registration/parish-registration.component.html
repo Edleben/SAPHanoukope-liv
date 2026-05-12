@@ -1,0 +1,150 @@
+<main id="mainWrapper">
+  <!-- Section Header -->
+  <section class="section-header-modern">
+    <div class="container">
+      <h1>Enregistrez-Vous</h1>
+      <p>Rejoignez notre communauté paroissiale</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section-modern">
+    <div class="container">
+      <div class="card-layout-modern mb-4">
+        <div class="card-body-modern text-center">
+          <div class="icon-modern d-inline-flex mb-3">🧑➕</div>
+          <h2 class="card-title-modern">Formulaire d'Enregistrement</h2>
+          <p class="mb-4">Bienvenue dans notre communauté paroissiale ! Remplissez ce formulaire pour vous enregistrer officiellement et recevoir nos communications, invitations et informations importantes.</p>
+        </div>
+      </div>
+
+      <div class="card-layout-modern">
+        <div class="card-header-modern">
+          <h2 class="card-title-modern text-white">Informations Personnelles</h2>
+        </div>
+        <div class="card-body-modern">
+          <form class="modern-form">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">Prénom</label>
+                <input type="text" class="form-control-modern" id="firstName" placeholder="Votre prénom">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Nom</label>
+                <input type="text" class="form-control-modern" id="lastName" placeholder="Votre nom">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control-modern" id="email" placeholder="Votre email">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="phone" class="form-label">Téléphone</label>
+                <input type="tel" class="form-control-modern" id="phone" placeholder="Votre téléphone">
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="address" class="form-label">Adresse</label>
+              <textarea class="form-control-modern" id="address" rows="2" placeholder="Votre adresse"></textarea>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="birthDate" class="form-label">Date de Naissance</label>
+                <input type="date" class="form-control-modern" id="birthDate">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="maritalStatus" class="form-label">État Civil</label>
+                <select class="form-control-modern" id="maritalStatus">
+                  <option value="">Sélectionnez</option>
+                  <option value="single">Célibataire</option>
+                  <option value="married">Marié(e)</option>
+                  <option value="divorced">Divorcé(e)</option>
+                  <option value="widowed">Veuf/Veuve</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="card-layout-modern mt-4">
+              <div class="card-header-modern">
+                <h3 class="card-title-modern text-white">Informations Paroissiales</h3>
+              </div>
+              <div class="card-body-modern">
+                <div class="mb-3">
+                  <label for="baptismDate" class="form-label">Date de Baptême</label>
+                  <input type="date" class="form-control-modern" id="baptismDate">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="firstCommunionDate" class="form-label">Date de Première Communion</label>
+                  <input type="date" class="form-control-modern" id="firstCommunionDate">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="confirmationDate" class="form-label">Date de Confirmation</label>
+                  <input type="date" class="form-control-modern" id="confirmationDate">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="previousParish" class="form-label">Paroisse Précédente (si applicable)</label>
+                  <input type="text" class="form-control-modern" id="previousParish" placeholder="Nom de la paroisse précédente">
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-layout-modern mt-4">
+              <div class="card-header-modern">
+                <h3 class="card-title-modern text-white">Centres d'Intérêt</h3>
+              </div>
+              <div class="card-body-modern">
+                <div class="mb-3">
+                  <label class="form-label">Souhaitez-vous participer à :</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="choir">
+                    <label class="form-check-label" for="choir">Chorale</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="youthGroup">
+                    <label class="form-check-label" for="youthGroup">Groupe de Jeunes</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="charityWork">
+                    <label class="form-check-label" for="charityWork">Œuvres Caritatives</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="catechism">
+                    <label class="form-check-label" for="catechism">Catéchèse</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="prayerGroup">
+                    <label class="form-check-label" for="prayerGroup">Groupe de Prière</label>
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="comments" class="form-label">Commentaires ou Demandes Spéciales</label>
+                  <textarea class="form-control-modern" id="comments" rows="3" placeholder="Vos commentaires"></textarea>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="newsletter">
+              <label class="form-check-label" for="newsletter">Je souhaite recevoir la newsletter paroissiale</label>
+            </div>
+            
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="terms" required>
+              <label class="form-check-label" for="terms">J'accepte les conditions d'utilisation et la politique de confidentialité</label>
+            </div>
+            
+            <button type="submit" class="btn btn-modern btn-modern-accent w-100">S'Enregistrer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

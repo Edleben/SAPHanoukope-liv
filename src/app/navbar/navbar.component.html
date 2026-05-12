@@ -1,0 +1,103 @@
+<header class="modern-navbar">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand navbar-brand-modern" aria-current="page" [routerLink]="['/']">
+        <img src="assets/images/Icône direct paroissial.png" alt="Logo SAP Hanoukopé"
+          style="max-height: 80px; width: auto;">
+      </a>
+      <button class="navbar-toggler navbar-toggler-modern" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-collapse-modern" id="navbarNavDropdown">
+        <ul class="navbar-nav navbar-nav-modern">
+          <li class="nav-item nav-item-modern dropdown" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+            <a class="nav-link nav-link-modern dropdown-toggle" aria-current="page" [routerLink]="['/']"
+              (click)="toggleDropdown($event, 0)">
+              Notre Paroisse
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern">
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page" [routerLink]="['/home']">Accueil</a>
+              </li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/about-us']">&Agrave; propos</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/clergy-and-parish-council']">Clerg&eacute; et Conseil Paroissial</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/ministries-and-associations']">Associations et Congr&eacute;gation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-modern dropdown" routerLinkActive="active">
+            <a class="nav-link nav-link-modern dropdown-toggle" aria-current="page"
+              [routerLink]="['/liturgies-and-formation']" (click)="toggleDropdown($event, 1)">
+              Liturgies et Formations
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern">
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['liturgies-and-formation/mass-schedule']">Programme des Messes</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['liturgies-and-formation/sacraments']">Les Sacrements</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['liturgies-and-formation/educational-programs']">Formation et
+                  Cat&eacute;ch&Egrave;se</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['liturgies-and-formation/prayer-requests']">Demande de Pri&egrave;res et de Messes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-modern dropdown" routerLinkActive="active">
+            <a class="nav-link nav-link-modern dropdown-toggle" aria-current="page"
+              [routerLink]="['/participation-et-engagement']" (click)="toggleDropdown($event, 2)">
+              Participation et Engagement
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern">
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/participation-et-engagement/online-giving']">Dons et Charit&eacute;s</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/participation-et-engagement/volunteer-opportunities']">Volontariat et
+                  Opportunit&eacute;s</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/participation-et-engagement/parish-registration']">Enregistrez-vous</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/participation-et-engagement/admin']">Administrateurs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-modern dropdown" routerLinkActive="active">
+            <a class="nav-link nav-link-modern dropdown-toggle" aria-current="page"
+              [routerLink]="['/events-and-announcements']" (click)="toggleDropdown($event, 3)">
+              Annonces et Ev&eacute;nements
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern">
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/events-and-announcements/parish-events']">Activit&eacute;s</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/events-and-announcements/news-and-announcements']">Annonces</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/events-and-announcements/bulletin']">Bulletin Paroissial</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/events-and-announcements/faq']">Foire Aux Questions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-modern dropdown" routerLinkActive="active">
+            <a class="nav-link nav-link-modern dropdown-toggle" aria-current="page"
+              [routerLink]="['/medias-and-resources']" (click)="toggleDropdown($event, 4)">
+              M&eacute;dia et Ressources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern">
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/medias-and-resources/photo-gallery']">Gallerie Photos</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/medias-and-resources/livestream']">Les Lives</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/medias-and-resources/resource-library']">Ressources et Documents</a></li>
+              <li><a class="dropdown-item dropdown-item-modern" aria-current="page"
+                  [routerLink]="['/medias-and-resources/contact-information']">Contactez-nous</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

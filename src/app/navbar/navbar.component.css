@@ -1,0 +1,35 @@
+/* Import the modern navbar styles */
+@import url('./navbar.component.modern.css');
+
+/* Hide the default dropdown arrows */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Add hover effect to show dropdowns */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Mobile dropdown toggle */
+@media (max-width: 991.98px) {
+  .dropdown-toggle::after {
+    display: inline-block;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    display: none;
+  }
+  
+  .nav-item.show .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Ensure dropdowns are properly positioned */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}

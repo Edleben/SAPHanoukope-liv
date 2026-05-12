@@ -1,0 +1,46 @@
+<main id="mainWrapper">
+  <!-- Section Header -->
+  <section class="section-header-modern">
+    <div class="container">
+      <h1>Participation et Engagement</h1>
+      <p>Impliquez-vous activement dans la vie de notre paroisse</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section-modern">
+    <div class="container">
+      <div class="grid-modern">
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">💝</div>
+          <h3>Dons et Charités</h3>
+          <p>Soutenez financièrement les projets et initiatives de notre paroisse</p>
+          <a [routerLink]="['/participation-et-engagement/online-giving']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🤝</div>
+          <h3>Volontariat et Opportunités</h3>
+          <p>Offrez votre temps et vos compétences pour servir la communauté</p>
+          <a [routerLink]="['/participation-et-engagement/volunteer-opportunities']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🧑➕</div>
+          <h3>Enregistrez-Vous</h3>
+          <p>Rejoignez notre communauté paroissiale</p>
+          <a [routerLink]="['/participation-et-engagement/parish-registration']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🛡️</div>
+          <h3>Administrateurs</h3>
+          <p>Espace réservé aux administrateurs de la paroisse</p>
+          <a [routerLink]="['/participation-et-engagement/admin']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>

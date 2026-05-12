@@ -1,0 +1,236 @@
+<main id="mainWrapper">
+  <!-- Hero Banner -->
+  <section class="home-banner-modern">
+    <div class="home-banner-overlay"></div>
+    <div class="home-banner-content container">
+      <div class="home-banner-text text-center">
+        <h1 class="home-banner-title">Accueil</h1>
+        <div class="home-banner-divider"></div>
+        <p class="home-banner-subtitle">Bienvenue sur le Site Internet de Notre Paroisse!</p>
+        <a href="#" class="btn btn-modern btn-modern-accent mt-3">Découvrir Notre Paroisse</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section class="schedule-section-modern py-4">
+    <div class="container">
+      <div class="section-header text-center mb-4">
+        <h2 class="section-title">Nos Horaires</h2>
+        <p class="section-subtitle">Programmation des messes, confessions et adorations</p>
+      </div>
+      <div class="row">
+        <!-- Mass Schedule -->
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="schedule-card-modern h-100">
+            <div class="schedule-card-header bg-modern-primary">
+              <h3 class="schedule-card-title text-white">Programme des messes</h3>
+            </div>
+            <div class="schedule-card-body">
+              <div class="schedule-table-modern">
+                <div class="schedule-row">
+                  <div class="schedule-day">Dimanche</div>
+                  <div class="schedule-times">
+                    <span class="time-badge">6:00</span>
+                    <span class="time-badge">8:00</span>
+                    <span class="time-badge">9:30</span>
+                    <span class="time-badge">11:00</span>
+                    <span class="time-badge">18:00</span>
+                  </div>
+                </div>
+                <div class="schedule-row">
+                  <div class="schedule-day">Lundi - Vendredi</div>
+                  <div class="schedule-times">
+                    <span class="time-badge">5:30</span>
+                    <span class="time-badge">6:30</span>
+                    <span class="time-badge">12:15</span>
+                  </div>
+                </div>
+                <div class="schedule-row">
+                  <div class="schedule-day">Samedi</div>
+                  <div class="schedule-times">
+                    <span class="time-badge">5:30</span>
+                    <span class="time-badge">6:30</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Confession Schedule -->
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="schedule-card-modern h-100">
+            <div class="schedule-card-header bg-modern-accent">
+              <h3 class="schedule-card-title text-white">Temps de confession</h3>
+            </div>
+            <div class="schedule-card-body">
+              <div class="schedule-table-modern">
+                <div class="schedule-row">
+                  <div class="schedule-day">Lundi - Vendredi</div>
+                  <div class="schedule-times">
+                    <span class="time-badge">8:00</span>
+                    <span class="time-badge">ou sur rendez-vous</span>
+                  </div>
+                </div>
+                <div class="schedule-row">
+                  <div class="schedule-day">Samedi</div>
+                  <div class="schedule-times">
+                    <span class="time-badge">16:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adoration Schedule -->
+        <div class="col-lg-4 col-md-6 mx-auto mb-3">
+          <div class="schedule-card-modern h-100">
+            <div class="schedule-card-header bg-modern-secondary">
+              <h3 class="schedule-card-title text-white">Temps d'adoration</h3>
+            </div>
+            <div class="schedule-card-body">
+              <div class="schedule-table-modern">
+                <div class="schedule-row">
+                  <div class="schedule-day">Jeudi</div>
+                  <div class="schedule-times">
+                    <span class="time-badge">Toute La Journ&eacute;e</span>
+                    <span class="time-badge">6:15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events-section-modern py-4">
+    <div class="container">
+      <div class="section-header text-center mb-4">
+        <h2 class="section-title text-white">Evènements à venir</h2>
+        <p class="section-subtitle text-light">Restez informé de nos activités paroissiales</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="events-card-modern">
+            <div class="events-card-body">
+              <div class="modern-calendar-header mb-3">
+                <h3 class="calendar-title">Calendrier des Événements</h3>
+                <div class="calendar-controls">
+                  <button class="btn-calendar-nav" id="prevMonth">◀️</button>
+                  <span class="current-month" id="currentMonth">Novembre 2025</span>
+                  <button class="btn-calendar-nav" id="nextMonth">▶️</button>
+                </div>
+              </div>
+              <app-calendar></app-calendar>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sermon Section -->
+  <section class="sermon-section-modern py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="sermon-image-modern">
+            <div class="sermon-image-overlay"></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="sermon-content-modern">
+            <h2 class="sermon-title">Se nourrir à temps et à contre-temps de la parole de Dieu</h2>
+            <p class="sermon-subtitle">Dernière Prédication</p>
+            <div class="sermon-buttons">
+              <button class="btn btn-modern btn-modern-primary me-2 mb-2">Suivre les enseignements</button>
+              <button class="btn btn-modern btn-modern-outline mb-2">Tous les enseignements</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pastors Section -->
+  <section class="pastors-section-modern py-4">
+    <div class="container">
+      <div class="section-header text-center mb-4">
+        <h2 class="section-title">Rencontrez Nos Prêtres</h2>
+        <p class="section-subtitle">Disponibles pour des conseils spirituels</p>
+      </div>
+      
+      <div class="visit-hours-modern mb-4">
+        <div class="visit-intro-modern text-center p-3">
+          <h3>Heures de rencontre</h3>
+          <p>Veuillez prendre rendez-vous pour une rencontre spirituelle.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Pastor 1 -->
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="pastor-card-modern h-100">
+            <img src="assets/images/hanoukope/logo.jpg" alt="Le P&egrave;re du jour" class="pastor-card-img">
+            <div class="pastor-card-body">
+              <h5 class="pastor-card-title">Le P&egrave;re du jour</h5>
+              <span class="pastor-card-subtitle">Cur&eacute;</span>
+              <p class="pastor-card-text">Un geste d'humilité : "S'ouvrir en vérité sur ses faiblesses fortifie l'âme."</p>
+              <div class="social-icons-modern">
+                <a href="#" class="social-icon-modern">📘</a>
+                <a href="#" class="social-icon-modern">✉️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastor 2 -->
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="pastor-card-modern h-100">
+            <img src="assets/images/hanoukope/logo.jpg" alt="Le P&egrave;re du jour" class="pastor-card-img">
+            <div class="pastor-card-body">
+              <h5 class="pastor-card-title">Le P&egrave;re du jour</h5>
+              <span class="pastor-card-subtitle">Vicaire</span>
+              <p class="pastor-card-text">Un geste d'humilité : "S'ouvrir en vérité sur ses faiblesses fortifie l'âme."</p>
+              <div class="social-icons-modern">
+                <a href="#" class="social-icon-modern">📘</a>
+                <a href="#" class="social-icon-modern">✉️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastor 3 -->
+        <div class="col-lg-4 col-md-6 mx-auto mb-3">
+          <div class="pastor-card-modern h-100">
+            <img src="assets/images/hanoukope/logo.jpg" alt="Le P&egrave;re du jour" class="pastor-card-img">
+            <div class="pastor-card-body">
+              <h5 class="pastor-card-title">Le P&egrave;re du jour</h5>
+              <span class="pastor-card-subtitle">Vicaire</span>
+              <p class="pastor-card-text">Un pas vers le pardon divin : "Admettre ses erreurs ouvre la porte à la miséricorde."</p>
+              <div class="social-icons-modern">
+                <a href="#" class="social-icon-modern">📘</a>
+                <a href="#" class="social-icon-modern">✉️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verse of the Day Section -->
+  <section class="verse-section-modern py-4">
+    <div class="container">
+      <div class="verse-content-modern text-center p-4">
+        <h3 class="verse-title-modern">VERSET DU JOUR</h3>
+        <div data-gb-widget="passage" data-passage="JAS.4.5" class="verse-text"></div>
+      </div>
+    </div>
+  </section>
+</main>

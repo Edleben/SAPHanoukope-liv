@@ -1,0 +1,11 @@
+/* Import modern footer styles */
+@import url('./footer.component.modern.css');
+
+/* Hide the old footer styles */
+#footer {
+  display: block;
+}
+
+#copyright {
+  display: none;
+}

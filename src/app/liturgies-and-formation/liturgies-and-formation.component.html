@@ -1,0 +1,65 @@
+<main class="mainWrapper">
+  <!-- Section Header -->
+  <section class="section-header-modern">
+    <div class="container">
+      <h1>Liturgies et Formations</h1>
+      <p>Se nourrir à temps et à contre-temps de la parole de Dieu</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section-modern">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card-layout-modern">
+            <div class="card-body-modern text-center">
+              <img src="assets/images/hanoukope/rubrique-img/bibcrox.jpg" class="img-modern mb-4" alt="bibcrox">
+              <h2 class="card-title-modern">Horaires et services</h2>
+              <h6 class="text-modern-primary mb-3">
+                Se nourrir à temps et à contre-temps de la parole de Dieu et garder sa lampe allumée.
+              </h6>
+              <p class="mb-4">Dernière Prédication</p>
+              <div class="btn-group-modern justify-content-center">
+                <button type="button" class="btn btn-modern btn-modern-primary">Suivre les enseignements</button>
+                <button type="button" class="btn btn-modern btn-modern-outline">Tous les enseignements</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-modern">
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">⛪</div>
+          <h3>Programme des Messes</h3>
+          <p>Consultez nos horaires de messes quotidiennes et dominicales</p>
+          <a [routerLink]="['liturgies-and-formation/mass-schedule']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">✝️</div>
+          <h3>Les Sacrements</h3>
+          <p>En savoir plus sur les sacrements de l'Église</p>
+          <a [routerLink]="['liturgies-and-formation/sacraments']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🎓</div>
+          <h3>Formation et Catéchèse</h3>
+          <p>Programmes de formation spirituelle et catéchèse</p>
+          <a [routerLink]="['liturgies-and-formation/educational-programs']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+
+        <div class="grid-item-modern text-center">
+          <div class="icon-modern">🙏</div>
+          <h3>Demande de Prières</h3>
+          <p>Soumettez vos intentions de prière et demandes de messes</p>
+          <a [routerLink]="['liturgies-and-formation/prayer-requests']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>

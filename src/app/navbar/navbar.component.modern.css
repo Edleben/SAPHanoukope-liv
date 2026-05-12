@@ -1,0 +1,205 @@
+/* Modern Navbar Styles */
+.modern-navbar {
+  background: linear-gradient(135deg, #2c3e50, #1a2a3a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand-modern {
+  font-family: 'Novecento Sans', 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #f8f9fa !important;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand-modern:hover {
+  color: #e6b800 !important;
+  transform: scale(1.05);
+}
+
+.navbar-brand-modern img {
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-toggler-modern {
+  border: none;
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-modern:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure toggler icon is visible on dark navbar */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse-modern {
+  padding: 0;
+}
+
+.navbar-nav-modern {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item-modern {
+  margin: 0 5px;
+  position: relative;
+}
+
+.nav-link-modern {
+  font-family: 'Novecento Sans', 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #f8f9fa !important;
+  padding: 30px 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-link-modern:hover,
+.nav-link-modern:focus {
+  color: #e6b800 !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-modern::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #e6b800;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link-modern:hover::after,
+.nav-item-modern.active .nav-link-modern::after {
+  width: 70%;
+}
+
+/* Dropdown Styles */
+.dropdown-menu-modern {
+  background: #2c3e50;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  margin-top: 0;
+  animation: dropdownFadeIn 0.3s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item-modern {
+  font-family: 'Novecento Sans', 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #f8f9fa;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+  text-transform: none;
+}
+
+.dropdown-item-modern:hover,
+.dropdown-item-modern:focus {
+  background: rgba(230, 184, 0, 0.2);
+  color: #e6b800;
+}
+
+/* Mobile Styles */
+@media (max-width: 991.98px) {
+  .navbar-nav-modern {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item-modern {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-link-modern {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link-modern::after {
+    display: none;
+  }
+
+  .dropdown-menu-modern {
+    background: rgba(44, 62, 80, 0.9);
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .dropdown-toggle-modern::after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Active state */
+.nav-item-modern.active .nav-link-modern {
+  color: #e6b800 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .navbar-brand-modern {
+    font-size: 1.5rem;
+  }
+
+  .nav-link-modern {
+    font-size: 0.95rem;
+  }
+
+  .navbar-brand-modern img {
+    max-height: 70px;
+    /* Taille réduite pour mobile */
+    width: auto;
+    /* Garde les proportions */
+  }
+
+}
