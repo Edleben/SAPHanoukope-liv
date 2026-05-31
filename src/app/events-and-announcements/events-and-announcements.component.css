@@ -1,0 +1,19 @@
+@import url('../shared/modern-components.css');
+
+.events-layout-wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.events-main-content {
+  flex: 1;
+  padding: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .events-main-content {
+    margin-bottom: 70px;
+  }
+}
