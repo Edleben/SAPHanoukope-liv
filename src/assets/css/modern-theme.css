@@ -54,7 +54,20 @@ body {
   font-size: 15px;
   line-height: 1.5;
   color: var(--neutral-black);
-  background-color: var(--neutral-light);
+  
+  /* Luxury Dark Background with premium geometric grid & dot matrix patterns */
+  background-color: #121824; /* Rich dark slate navy */
+  background-image: 
+    /* Gold accent dots */
+    radial-gradient(rgba(230, 184, 0, 0.12) 1.5px, transparent 1.5px),
+    /* Subtle off-white dot grid */
+    radial-gradient(rgba(248, 249, 250, 0.04) 1px, transparent 1px),
+    /* Deluxe diagonal geometric lines */
+    linear-gradient(45deg, rgba(248, 249, 250, 0.01) 25%, transparent 25%, transparent 75%, rgba(248, 249, 250, 0.01) 75%, rgba(248, 249, 250, 0.01)),
+    linear-gradient(-45deg, rgba(248, 249, 250, 0.01) 25%, transparent 25%, transparent 75%, rgba(248, 249, 250, 0.01) 75%, rgba(248, 249, 250, 0.01));
+  background-size: 40px 40px, 20px 20px, 60px 60px, 60px 60px;
+  background-position: 0 0, 10px 10px, 0 0, 0 0;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
