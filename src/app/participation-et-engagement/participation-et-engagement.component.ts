@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-participation-et-engagement',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class ParticipationEtEngagementComponent {
+  constructor(private router: Router) {}
 
+  isRootRoute(): boolean {
+    const url = this.router.url.split('?')[0];
+    return url === '/participation-et-engagement' || url === '/participation-et-engagement/';
+  }
 }

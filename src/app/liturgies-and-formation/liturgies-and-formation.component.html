@@ -1,4 +1,4 @@
-<main class="mainWrapper">
+<main class="mainWrapper liturgies-layout-wrapper">
   <!-- Section Header -->
   <section class="section-header-modern">
     <div class="container">
@@ -7,8 +7,16 @@
     </div>
   </section>
 
-  <!-- Content Section -->
-  <section class="content-section-modern">
+  <!-- Floating Drawer Navigation -->
+  <app-liturgies-floating-menu></app-liturgies-floating-menu>
+
+  <!-- Main Content Area -->
+  <div class="liturgies-main-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Moved to bottom: intro card and navigation grid -->
+  <section class="content-section-modern" *ngIf="isRootRoute()">
     <div class="container">
       <div class="row mb-5">
         <div class="col-12">
@@ -60,6 +68,4 @@
       </div>
     </div>
   </section>
-
-  <router-outlet></router-outlet>
 </main>

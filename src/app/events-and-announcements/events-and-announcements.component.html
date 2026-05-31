@@ -1,4 +1,4 @@
-<main class="mainWrapper">
+<main class="mainWrapper events-layout-wrapper">
   <!-- Section Header -->
   <section class="section-header-modern">
     <div class="container">
@@ -7,8 +7,16 @@
     </div>
   </section>
 
+  <!-- Floating Drawer Navigation -->
+  <app-events-floating-menu></app-events-floating-menu>
+
+  <!-- Main Content Area -->
+  <div class="events-main-content">
+    <router-outlet></router-outlet>
+  </div>
+
   <!-- Content Section -->
-  <section class="content-section-modern">
+  <section class="content-section-modern" *ngIf="isRootRoute()">
     <div class="container">
       <div class="row">
         <div class="col-12 mb-4">
@@ -47,6 +55,4 @@
       </div>
     </div>
   </section>
-
-  <router-outlet></router-outlet>
 </main>

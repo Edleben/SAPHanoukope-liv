@@ -1,32 +1,63 @@
 /* Shared Modern Component Styles */
 
-/* Section Header */
+/* Section Header - Parent menu banner */
 .section-header-modern {
   background: linear-gradient(135deg, #2c3e50, #1a2a3a);
   color: white;
-  padding: 3rem 0;
+  padding: 1rem 0;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .section-header-modern h1 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   color: white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .section-header-modern p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   max-width: 700px;
   margin: 0 auto;
-  color: #e9ecef;
+  color: #b0bec5;
+}
+
+/* Subpage Header - compact slim title strip for child routes */
+.section-subpage-header {
+  background: linear-gradient(135deg, #1a2a3a, #243447);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: 4px solid #e6b800;
+  margin-bottom: 0;
+}
+
+.section-subpage-header h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.section-subpage-header p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #90a4ae;
+  flex: 1;
 }
 
 /* Content Section */
 .content-section-modern {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
+
 
 /* Modern Card Layout */
 .card-layout-modern {

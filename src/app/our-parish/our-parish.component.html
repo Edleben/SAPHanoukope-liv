@@ -7,8 +7,18 @@
     </div>
   </section>
 
-  <!-- Content Section -->
-  <section class="content-section-modern">
+  <div class="our-parish-layout-container">
+    <!-- Floating Drawer Navigation Component -->
+    <app-our-parish-floating-menu></app-our-parish-floating-menu>
+
+    <!-- Main Content Area -->
+    <div class="our-parish-main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <!-- Content Section (Moved to the end) -->
+  <section class="content-section-modern footer-news-welcome">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -59,60 +69,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Navigation Cards -->
-      <div class="row mt-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="card-layout-modern">
-            <div class="card-body-modern text-center">
-              <div class="icon-modern">
-                <i class="fas fa-home"></i>
-              </div>
-              <h3 class="card-title-modern">Accueil</h3>
-              <p>Découvrez notre communauté et nos activités</p>
-              <a [routerLink]="['/home']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card-layout-modern">
-            <div class="card-body-modern text-center">
-              <div class="icon-modern">
-                <i class="fas fa-info-circle"></i>
-              </div>
-              <h3 class="card-title-modern">A Propos</h3>
-              <p>En savoir plus sur notre histoire et nos valeurs</p>
-              <a [routerLink]="['/about-us']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card-layout-modern">
-            <div class="card-body-modern text-center">
-              <div class="icon-modern">
-                <i class="fas fa-church"></i>
-              </div>
-              <h3 class="card-title-modern">Clergé & Conseil</h3>
-              <p>Rencontrez nos prêtres et notre conseil paroissial</p>
-              <a [routerLink]="['/clergy-and-parish-council']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card-layout-modern">
-            <div class="card-body-modern text-center">
-              <div class="icon-modern">
-                <i class="fas fa-hands-helping"></i>
-              </div>
-              <h3 class="card-title-modern">Associations</h3>
-              <p>Découvrez nos groupes et ministères paroissiaux</p>
-              <a [routerLink]="['/ministries-and-associations']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
-
-  <router-outlet></router-outlet>
 </main>

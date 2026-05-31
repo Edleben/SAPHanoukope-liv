@@ -1,99 +1,204 @@
 <main id="mainWrapper">
-  <!-- Section Header -->
-  <section class="section-header-modern">
+
+  <!-- ── Section Header ─────────────────────────────────────── -->
+  <section class="section-subpage-header">
     <div class="container">
       <h1>Contactez-Nous</h1>
-      <p>Nous sommes à votre disposition pour répondre à vos questions</p>
+      <p>Nous sommes à votre disposition pour répondre à toutes vos questions</p>
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- ── Content ────────────────────────────────────────────── -->
   <section class="content-section-modern">
     <div class="container">
-      <div class="card-layout-modern mb-4">
-        <div class="card-body-modern">
-          <p class="text-center">Nous sommes à votre disposition pour répondre à vos questions, écouter vos besoins ou vous orienter dans vos démarches.</p>
-        </div>
+
+      <!-- Intro banner -->
+      <div class="contact-intro-banner mb-5">
+        <i class="fa-solid fa-church contact-intro-icon"></i>
+        <p>
+          Notre paroisse vous accueille avec joie. N'hésitez pas à nous contacter
+          pour toute question, demande de sacrements ou renseignement pastoral.
+        </p>
       </div>
 
-      <div class="row">
-        <div class="col-lg-6 mb-4">
-          <div class="card-layout-modern h-100">
-            <div class="card-header-modern">
-              <h2 class="card-title-modern text-white">Informations de Contact</h2>
+      <div class="row g-4">
+
+        <!-- ── Left column: Contact info ─────────────────────── -->
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <div class="contact-card-header">
+              <h2><i class="fa-solid fa-address-card me-2"></i>Informations de Contact</h2>
             </div>
-            <div class="card-body-modern">
-              <div class="info">
-                <div class="mb-4">
-                  <div class="icon-modern d-inline-flex mb-3">📍</div>
+            <div class="contact-card-body">
+
+              <!-- Address -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon-wrap">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-info-text">
                   <h4>Adresse</h4>
-                  <p>ARCHIDIOCESE DE LOME<br>
-                    SAINT ANTOINE DE PADOUE DE HANOUKOPE<br>
-                    Lomé-Togo<br>
-                    BP: 384<br>
-                    Lomé-Togo</p>
-                </div>
-
-                <div class="mb-4">
-                  <div class="icon-modern d-inline-flex mb-3">✉️</div>
-                  <h4>Email</h4>
-                  <p>infosaph.com</p>
-                </div>
-
-                <div class="mb-4">
-                  <div class="icon-modern d-inline-flex mb-3">📞</div>
-                  <h4>Téléphone</h4>
-                  <p>+228 22 21 69 06</p>
+                  <p>
+                    Archidiocèse de Lomé<br>
+                    <strong>Saint Antoine de Padoue de Hanoukopé</strong><br>
+                    BP 384, Lomé – Togo
+                  </p>
                 </div>
               </div>
+
+              <!-- Email -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-info-text">
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:info@saphanoukope.tg">info&#64;saphanoukope.tg</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon-wrap">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-info-text">
+                  <h4>Téléphone</h4>
+                  <p>
+                    <a href="tel:+22822216906">+228 22 21 69 06</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon-wrap">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="contact-info-text">
+                  <h4>Heures de Secrétariat</h4>
+                  <p>
+                    Lun – Ven : 08h00 – 12h00 &amp; 15h00 – 17h30<br>
+                    Samedi : 08h00 – 12h00
+                  </p>
+                </div>
+              </div>
+
+              <!-- Social links -->
+              <div class="contact-social-row">
+                <a href="#" class="contact-social-link" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="contact-social-link" aria-label="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="contact-social-link" aria-label="WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="card-layout-modern h-100">
-            <div class="card-header-modern">
-              <h2 class="card-title-modern text-white">Envoyez-nous un Message</h2>
+        <!-- ── Right column: Contact form ────────────────────── -->
+        <div class="col-lg-7">
+          <div class="contact-form-card">
+            <div class="contact-card-header">
+              <h2><i class="fa-solid fa-paper-plane me-2"></i>Envoyez-nous un Message</h2>
             </div>
-            <div class="card-body-modern">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group mb-3">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" class="form-control-modern" id="name" placeholder="Votre Nom" required>
+            <div class="contact-card-body">
+              <form action="forms/contact.php" method="post" role="form" class="contact-form">
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <label for="contact-name">
+                        <i class="fa-solid fa-user"></i> Nom
+                      </label>
+                      <input type="text" id="contact-name" name="name"
+                             placeholder="Votre nom complet" required>
+                    </div>
                   </div>
-                  <div class="col-md-6 form-group mb-3">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control-modern" name="email" id="email" placeholder="Votre Email" required>
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <label for="contact-email">
+                        <i class="fa-solid fa-envelope"></i> Email
+                      </label>
+                      <input type="email" id="contact-email" name="email"
+                             placeholder="Votre adresse email" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-field">
+                      <label for="contact-subject">
+                        <i class="fa-solid fa-tag"></i> Sujet
+                      </label>
+                      <input type="text" id="contact-subject" name="subject"
+                             placeholder="Objet de votre message" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-field">
+                      <label for="contact-message">
+                        <i class="fa-solid fa-message"></i> Message
+                      </label>
+                      <textarea id="contact-message" name="message" rows="6"
+                                placeholder="Écrivez votre message ici…" required></textarea>
+                    </div>
                   </div>
                 </div>
-                <div class="form-group mb-3">
-                  <label for="subject">Sujet</label>
-                  <input type="text" class="form-control-modern" name="subject" id="subject" placeholder="Sujet" required>
+
+                <!-- Status messages -->
+                <div class="form-status">
+                  <div class="form-loading">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i> Envoi en cours…
+                  </div>
+                  <div class="form-error">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Une erreur est survenue. Veuillez réessayer.
+                  </div>
+                  <div class="form-success">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Votre message a été envoyé. Merci!
+                  </div>
                 </div>
-                <div class="form-group mb-3">
-                  <label for="message">Message</label>
-                  <textarea class="form-control-modern" name="message" rows="5" placeholder="Message" required></textarea>
+
+                <div class="form-submit">
+                  <button type="submit" class="btn-contact-submit">
+                    <i class="fa-solid fa-paper-plane me-2"></i>Envoyer le Message
+                  </button>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message a été envoyé. Merci!</div>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-modern btn-modern-accent">Envoyer</button>
-                </div>
+
               </form>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-layout-modern mt-4">
-        <div class="card-body-modern p-0">
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps?q=6.135910,1.215957&z=16&output=embed" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Église Hanoukopé, Lomé-Togo"></iframe>
+      </div><!-- /row -->
+
+      <!-- ── Map ──────────────────────────────────────────────── -->
+      <div class="contact-map-wrap mt-5">
+        <div class="contact-map-header">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>Nous Trouver</span>
+        </div>
+        <div class="contact-map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=6.135910,1.215957&z=16&output=embed"
+            style="border:0; width:100%; height:380px;"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation Église Saint Antoine de Padoue, Hanoukopé, Lomé-Togo">
+          </iframe>
         </div>
       </div>
-    </div>
+
+    </div><!-- /container -->
   </section>
+
 </main>
