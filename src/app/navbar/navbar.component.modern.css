@@ -1,13 +1,27 @@
-/* Modern Navbar Styles */
+/* =============================================================
+   Modern Navbar — Mobile-First Responsive Styles
+   Brand colors: Deep Navy #1a2a3a / Gold #e6b800 / White #f8f9fa
+   ============================================================= */
+
+/* ── Base Header ─────────────────────────────────────────────── */
 .modern-navbar {
   background: linear-gradient(135deg, #2c3e50, #1a2a3a);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   padding: 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1050;
 }
 
+.modern-navbar .navbar,
+.modern-navbar .container-fluid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ── Brand Logo ──────────────────────────────────────────────── */
 .navbar-brand-modern {
   font-family: 'Novecento Sans', 'Raleway', sans-serif;
   font-weight: 700;
@@ -27,202 +41,356 @@
 .navbar-brand-modern img {
   height: auto;
   width: auto;
-  max-height: 50px;
+  max-height: 60px;
   object-fit: contain;
   display: block;
 }
 
+/* ── Toggler (Hamburger) ─────────────────────────────────────── */
 .navbar-toggler-modern {
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #f8f9fa;
-  font-size: 1.5rem;
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  font-size: 1.4rem;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
 }
 
-.navbar-toggler-modern:hover {
-  background: rgba(255, 255, 255, 0.2);
+.navbar-toggler-modern:hover,
+.navbar-toggler-modern:focus {
+  background: rgba(230, 184, 0, 0.2);
+  border-color: rgba(230, 184, 0, 0.5);
+  box-shadow: 0 0 0 3px rgba(230, 184, 0, 0.2);
+  outline: none;
 }
 
-/* Ensure toggler icon is visible on dark navbar */
 .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/* ── Desktop Nav List ────────────────────────────────────────── */
 .navbar-collapse-modern {
   padding: 0;
-}
-
-/* Header Bleeding Padding Fixes */
-.modern-navbar .navbar,
-.modern-navbar .container-fluid {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
 }
 
 .navbar-nav-modern {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center menu items elegantly */
+  justify-content: center;
   width: 100%;
 }
 
+/* ── Desktop Nav Item ────────────────────────────────────────── */
 .nav-item-modern {
   margin: 0;
   position: relative;
-  height: 80px; /* Stretch parent item to match brand header height */
+  height: 80px;
   display: flex;
   align-items: center;
 }
 
+/* ── Desktop Nav Link ────────────────────────────────────────── */
 .nav-link-modern {
   font-family: 'Novecento Sans', 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #f8f9fa !important;
-  height: 100%; /* Stretch to full height of header */
-  padding: 0 18px; /* Elegant side padding */
+  height: 100%;
+  padding: 0 16px;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
+/* Remove default bootstrap caret */
+.nav-link-modern::after,
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* ── Desktop Hover / Focus ───────────────────────────────────── */
 .nav-link-modern:hover,
 .nav-link-modern:focus,
-.nav-item-modern:hover .nav-link-modern {
-  color: #ffffff !important; /* Elegant white for hover text */
-  background-color: #e6b800 !important; /* Gold background spans full height */
+.nav-item-modern:hover > .nav-link-modern {
+  color: #ffffff !important;
+  background-color: #e6b800 !important;
+  outline: none;
 }
 
-.nav-link-modern::after {
-  display: none !important; /* Remove line since background spans full height */
+/* ── Desktop Active State ────────────────────────────────────── */
+.nav-item-modern.active > .nav-link-modern {
+  color: #e6b800 !important;
+  background-color: transparent !important;
+  border-bottom: 3px solid #e6b800;
 }
 
-/* Dropdown Styles */
-.dropdown-menu-modern,
-.navbar .dropdown ul {
+/* Active + Hover — text must stay white so it's visible */
+.nav-item-modern.active > .nav-link-modern:hover,
+.nav-item-modern.active > .nav-link-modern:focus,
+.nav-item-modern.active:hover > .nav-link-modern {
+  color: #ffffff !important;
+  background-color: #e6b800 !important;
+  border-bottom-color: transparent;
+}
+
+/* ── Dropdown Menu (Desktop defaults) ───────────────────────── */
+.dropdown-menu-modern {
   position: absolute !important;
   top: 100% !important;
   left: 50% !important;
-  transform: translateX(-50%) !important; /* Center dropdown under the menu item */
+  transform: translateX(-50%) !important;
   min-width: 240px !important;
-  background: #1a2a3a !important; /* Site brand deep blue */
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
-  padding: 8px 0 !important;
+  background: #1a2a3a !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-top: 2px solid #e6b800 !important;
+  border-radius: 0 0 10px 10px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35) !important;
+  padding: 6px 0 !important;
   margin-top: 0 !important;
-  animation: dropdownFadeIn 0.3s ease;
+  /* NO animation here — it interferes with Bootstrap's display:none */
 }
 
-@keyframes dropdownFadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 10px) !important;
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0) !important;
-  }
-}
-
+/* ── Dropdown Items ──────────────────────────────────────────── */
 .dropdown-item-modern {
   font-family: 'Novecento Sans', 'Raleway', sans-serif;
   font-weight: 500;
-  color: #f8f9fa !important;
-  padding: 10px 24px !important;
-  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  color: #dce8f0 !important;
+  padding: 10px 20px !important;
+  transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
   text-transform: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-left: 3px solid transparent;
 }
 
 .dropdown-item-modern:hover,
 .dropdown-item-modern:focus {
-  background: #e6b800 !important; /* Gold item hover */
-  color: #ffffff !important; /* White text on item hover */
+  background: #e6b800 !important;
+  color: #ffffff !important;
+  padding-left: 26px !important;
+  border-left-color: #fff !important;
+  outline: none;
 }
 
-/* Mobile Styles */
+.dropdown-item-modern.active,
+.dropdown-item-modern:active {
+  background: rgba(230, 184, 0, 0.25) !important;
+  color: #e6b800 !important;
+  border-left-color: #e6b800 !important;
+}
+
+/* ── Divider within dropdown ─────────────────────────────────── */
+.dropdown-divider {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  margin: 4px 0 !important;
+}
+
+/* =============================================================
+   MOBILE STYLES  (≤ 991px — Bootstrap lg breakpoint)
+   ============================================================= */
 @media (max-width: 991.98px) {
+
+  /* Expanded nav background */
+  .navbar-collapse-modern {
+    background: linear-gradient(180deg, #1e2f3f 0%, #162028 100%);
+    border-top: 2px solid #e6b800;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  }
+
+  /* Nav list */
   .navbar-nav-modern {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: flex-start;
+    width: 100%;
+    padding: 8px 0 16px;
   }
 
+  /* Nav item */
   .nav-item-modern {
     width: 100%;
-    margin: 0;
     height: auto;
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   }
 
+  .nav-item-modern:last-child {
+    border-bottom: none;
+  }
+
+  /* Nav link */
   .nav-link-modern {
-    padding: 15px 20px;
     height: auto;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px 20px;
+    font-size: 1rem;
+    justify-content: space-between;
+    border-radius: 0;
+    border-left: 4px solid transparent;
   }
 
-  .nav-link-modern::after {
-    display: none;
+  /* No ::before chevron on mobile — remove the unwanted > sign */
+  .nav-item-modern.dropdown .nav-link-modern::before {
+    display: none !important;
   }
 
-  .dropdown-menu-modern,
-  .navbar .dropdown ul {
+  /* ── Mobile Hover ── */
+  .nav-link-modern:hover,
+  .nav-link-modern:focus,
+  .nav-item-modern:hover > .nav-link-modern {
+    background-color: rgba(230, 184, 0, 0.15) !important;
+    color: #e6b800 !important;
+    border-left-color: #e6b800;
+    outline: none;
+  }
+
+  /* ── Mobile Focus visible (keyboard) ── */
+  .nav-link-modern:focus-visible {
+    box-shadow: inset 0 0 0 2px #e6b800;
+    background-color: rgba(230, 184, 0, 0.1) !important;
+    color: #e6b800 !important;
+    outline: none;
+  }
+
+  /* ── Mobile Active ── */
+  .nav-item-modern.active > .nav-link-modern {
+    background-color: transparent !important;
+    color: #e6b800 !important;
+    border-left: 4px solid #e6b800;
+    border-bottom: none;
+  }
+
+  /* ── Mobile Active + Hover ── */
+  .nav-item-modern.active > .nav-link-modern:hover,
+  .nav-item-modern.active > .nav-link-modern:focus,
+  .nav-item-modern.active:hover > .nav-link-modern {
+    background-color: rgba(230, 184, 0, 0.15) !important;
+    color: #ffffff !important;
+    border-left-color: #e6b800;
+  }
+
+  /* ── Mobile Dropdown Menu ── */
+  /* By default, dropdowns must be hidden — only show when parent has .show */
+  .dropdown-menu-modern {
+    display: none !important; /* CRITICAL: prevent auto-expand on mobile */
     position: static !important;
     transform: none !important;
     left: auto !important;
-    background: rgba(44, 62, 80, 0.9) !important;
-    box-shadow: none !important;
+    width: 100% !important;
+    min-width: unset !important;
+    background: rgba(10, 20, 30, 0.75) !important;
+    border: none !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
     border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 4px 0 8px !important;
     margin-top: 0 !important;
+    animation: none !important;
   }
 
-  .dropdown-toggle-modern::after {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+  /* Show ONLY when parent nav-item has .show class (set by toggleDropdown) */
+  .nav-item-modern.show > .dropdown-menu-modern {
+    display: block !important;
   }
-}
 
-/* Active state */
-.nav-item-modern.active .nav-link-modern {
-  color: #e6b800 !important;
-}
+  /* ── Mobile Dropdown Items ── */
+  .dropdown-item-modern {
+    font-size: 0.88rem !important;
+    padding: 11px 16px 11px 36px !important;
+    color: rgba(220, 232, 240, 0.85) !important;
+    border-left: 3px solid transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+  }
 
-.nav-item-modern.active:hover .nav-link-modern,
-.nav-item-modern.active .nav-link-modern:hover {
-  color: #ffffff !important; /* Change active text color to white on hover */
-}
+  /* Decorative dot for submenu items */
+  .dropdown-item-modern::before {
+    content: '•';
+    color: rgba(230,184,0,0.4);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+  }
 
-/* Responsive adjustments */
-@media (max-width: 767.98px) {
+  /* ── Mobile Dropdown Item Hover ── */
+  .dropdown-item-modern:hover,
+  .dropdown-item-modern:focus {
+    background: rgba(230, 184, 0, 0.15) !important;
+    color: #e6b800 !important;
+    border-left-color: #e6b800 !important;
+    padding-left: 38px !important;
+    outline: none;
+  }
+
+  .dropdown-item-modern:hover::before,
+  .dropdown-item-modern:focus::before {
+    color: #e6b800;
+  }
+
+  /* ── Mobile Dropdown Item Focus visible ── */
+  .dropdown-item-modern:focus-visible {
+    box-shadow: inset 0 0 0 2px rgba(230,184,0,0.5);
+    background: rgba(230, 184, 0, 0.12) !important;
+    color: #e6b800 !important;
+    outline: none;
+  }
+
+  /* ── Mobile Dropdown Item Active ── */
+  .dropdown-item-modern.active,
+  .dropdown-item-modern:active {
+    background: rgba(230, 184, 0, 0.22) !important;
+    color: #e6b800 !important;
+    border-left-color: #e6b800 !important;
+    font-weight: 700 !important;
+  }
+
+  .dropdown-item-modern.active::before {
+    color: #e6b800;
+  }
+
+  /* Brand smaller on mobile */
   .navbar-brand-modern {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .navbar-brand-modern img {
+    max-height: 54px;
+  }
+}
+
+/* =============================================================
+   SMALL MOBILE  (≤ 575px)
+   ============================================================= */
+@media (max-width: 575.98px) {
+  .navbar-brand-modern img {
+    max-height: 46px;
   }
 
   .nav-link-modern {
     font-size: 0.95rem;
+    padding: 13px 16px;
   }
 
-  .navbar-brand-modern img {
-    max-height: 70px;
-    /* Taille réduite pour mobile */
-    width: auto;
-    /* Garde les proportions */
+  .dropdown-item-modern {
+    padding: 10px 14px 10px 32px !important;
+    font-size: 0.85rem !important;
   }
-
 }

@@ -1,35 +1,45 @@
 /* Import the modern navbar styles */
 @import url('./navbar.component.modern.css');
 
-/* Hide the default dropdown arrows */
-.dropdown-toggle::after {
-  display: none;
-}
-
-/* Add hover effect to show dropdowns */
-.nav-item:hover .dropdown-menu {
-  display: block;
-}
-
-/* Mobile dropdown toggle */
-@media (max-width: 991.98px) {
+/* ── Desktop: show dropdown on hover (≥ 992px) ──────────────── */
+@media (min-width: 992px) {
+  /* Hide Bootstrap's default caret — we use ::before chevron */
   .dropdown-toggle::after {
-    display: inline-block;
+    display: none !important;
   }
-  
-  .nav-item:hover .dropdown-menu {
-    display: none;
-  }
-  
-  .nav-item.show .dropdown-menu {
+
+  /* Show dropdown on hover for desktop */
+  .nav-item:hover > .dropdown-menu,
+  .nav-item-modern:hover > .dropdown-menu-modern {
     display: block;
   }
+
+  /* Ensure dropdown is properly positioned */
+  .dropdown-menu,
+  .dropdown-menu-modern {
+    position: absolute;
+    top: 100%;
+    z-index: 1050;
+  }
 }
 
-/* Ensure dropdowns are properly positioned */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
+/* ── Mobile: click-toggle only (≤ 991.98px) ─────────────────── */
+@media (max-width: 991.98px) {
+  /* Hide Bootstrap caret — no indicator needed */
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+
+  /* Hover must NOT open dropdowns on touch devices */
+  .nav-item:hover > .dropdown-menu {
+    display: none;
+  }
+
+  /* toggleDropdown() in navbar.component.ts adds .show to <li>.
+     Both .nav-item.show and .nav-item-modern.show selectors needed
+     because Bootstrap applies .show to .nav-item but our CSS targets
+     .nav-item-modern. */
+  .nav-item.show > .dropdown-menu {
+    display: block;
+  }
 }
