@@ -1,4 +1,4 @@
-<main id="mainWrapper">
+<main class="mainWrapper participation-layout-wrapper">
   <!-- Section Header -->
   <section class="section-header-modern">
     <div class="container">
@@ -7,7 +7,15 @@
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- Floating Drawer Navigation -->
+  <app-participation-floating-menu></app-participation-floating-menu>
+
+  <!-- Main Content Area (router-outlet renders child pages here) -->
+  <div class="participation-main-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Overview Grid (shown at section level) -->
   <section class="content-section-modern">
     <div class="container">
       <div class="grid-modern">
@@ -26,7 +34,7 @@
         </div>
 
         <div class="grid-item-modern text-center">
-          <div class="icon-modern">🧑➕</div>
+          <div class="icon-modern">🧑‍➕</div>
           <h3>Enregistrez-Vous</h3>
           <p>Rejoignez notre communauté paroissiale</p>
           <a [routerLink]="['/participation-et-engagement/parish-registration']" class="btn btn-modern btn-modern-outline">Plus d'Info</a>
@@ -41,6 +49,4 @@
       </div>
     </div>
   </section>
-
-  <router-outlet></router-outlet>
 </main>

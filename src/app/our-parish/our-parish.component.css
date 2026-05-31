@@ -46,9 +46,10 @@ section.sermon-section {
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+/* Scoped to avoid overriding shared header sizes */
+.mainWrapper > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
 }
 
 .mass {
@@ -231,6 +232,7 @@ h1 {
 .our-parish-layout-container {
   display: flex;
   min-height: 400px;
+  margin-top: 0;
 }
 
 .our-parish-main-content {

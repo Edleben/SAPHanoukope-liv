@@ -33,6 +33,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CalendarComponent } from './shared/calendar/calendar.component';
 import { OurParishFloatingMenuComponent } from './our-parish/our-parish-floating-menu/our-parish-floating-menu.component';
 import { LiturgiesFloatingMenuComponent } from './liturgies-and-formation/liturgies-floating-menu/liturgies-floating-menu.component';
+import { ParticipationFloatingMenuComponent } from './participation-et-engagement/participation-floating-menu/participation-floating-menu.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { LiturgiesFloatingMenuComponent } from './liturgies-and-formation/liturg
     OurParishComponent,
     OurParishFloatingMenuComponent,
     LiturgiesFloatingMenuComponent,
+    ParticipationFloatingMenuComponent,
     LiturgiesAndFormationComponent,
     ParticipationEtEngagementComponent,
     EventsAndAnnouncementsComponent,
