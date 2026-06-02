@@ -185,6 +185,7 @@
 .text-highlight-modern {
   background: linear-gradient(135deg, #e6b800, #c99e00);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
@@ -201,24 +202,25 @@
   .section-header-modern h1 {
     font-size: 2rem;
   }
-  
+
   .section-header-modern p {
     font-size: 1rem;
   }
-  
+
   .grid-modern {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .btn-group-modern {
     flex-direction: column;
   }
-  
+
   .btn-group-modern .btn-modern {
     width: 100%;
   }
 }
+
 .img-cover {
   height: 220px;
 }
@@ -258,6 +260,7 @@
 .portfolio-info {
   background: rgba(255, 255, 255, 0.9);
 }
+
 .avatar-modern {
   width: 160px;
   height: 160px;
@@ -265,8 +268,8 @@
   overflow: hidden;
   margin: 0 auto 12px auto;
   background: #fff;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  border: 6px solid rgba(0,0,0,0.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 6px solid rgba(0, 0, 0, 0.03);
 }
 
 .avatar-modern-sm {
