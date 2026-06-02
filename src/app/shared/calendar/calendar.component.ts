@@ -7,7 +7,8 @@ import interactionPlugin, { DateClickArg } from '@fullcalendar/interaction';
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
-  styleUrl: './calendar.component.css'
+  styleUrl: './calendar.component.css',
+  standalone: false,
 })
 export class CalendarComponent {
   calendarOptions: CalendarOptions = {

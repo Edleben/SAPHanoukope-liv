@@ -1,0 +1,18 @@
+<nav class="floating-drawer-nav" aria-label="Navigation Liturgies et Formations">
+  <ul class="drawer-list">
+    <li *ngFor="let item of menuItems" class="drawer-item">
+      <a [routerLink]="[item.route]"
+         routerLinkActive="active-item"
+         class="drawer-link"
+         [attr.aria-label]="item.label">
+        <span class="drawer-icon-wrapper" aria-hidden="true">
+          <i [class]="item.icon"></i>
+        </span>
+        <div class="drawer-content">
+          <span class="drawer-label">{{ item.label }}</span>
+          <span class="drawer-desc" *ngIf="item.description">{{ item.description }}</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>

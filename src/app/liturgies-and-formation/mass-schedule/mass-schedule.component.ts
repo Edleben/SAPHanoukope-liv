@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-mass-schedule',
   templateUrl: './mass-schedule.component.html',
-  styleUrl: './mass-schedule.component.css'
+  styleUrl: './mass-schedule.component.css',
+  standalone: false,
 })
 export class MassScheduleComponent {
 

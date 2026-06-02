@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ministries-and-associationas',
   templateUrl: './ministries-and-associations.component.html',
-  styleUrl: './ministries-and-associations.component.css'
+  styleUrl: './ministries-and-associations.component.css',
+  standalone: false,
 })
 export class MinistriesAndAssociationsComponent {
 

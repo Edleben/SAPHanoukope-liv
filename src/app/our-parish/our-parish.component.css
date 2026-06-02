@@ -46,9 +46,10 @@ section.sermon-section {
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+/* Scoped to avoid overriding shared header sizes */
+.mainWrapper > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
 }
 
 .mass {
@@ -226,3 +227,27 @@ h1 {
         border: none;
     }
 }
+
+/* Layout wrapper for our-parish component */
+.our-parish-layout-container {
+  display: flex;
+  min-height: 400px;
+  margin-top: 0;
+}
+
+.our-parish-main-content {
+  flex: 1;
+  padding: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .our-parish-layout-container {
+    flex-direction: column;
+  }
+  .our-parish-main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 70px; /* Space for mobile bottom bar */
+  }
+}
