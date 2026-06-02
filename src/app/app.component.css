@@ -7,6 +7,11 @@ main {
     padding: 0;
     width: 100%;
     height: 100%;
+    background-image: url('../assets/images/site-artifacts/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     background-color: #fbeec1;
     color: #4f2f17;
 }
