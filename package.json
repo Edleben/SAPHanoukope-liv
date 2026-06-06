@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href=/SAPHanoukope-liv/ && npx angular-cli-ghpages --dir=dist/saphanoukope/browser"
+    "deploy": "ng build --configuration production --base-href=/ && npx angular-cli-ghpages --dir=dist/saphanoukope/browser --cname=www.saphanoukope.com"
   },
   "private": true,
   "dependencies": {
